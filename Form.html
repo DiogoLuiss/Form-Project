@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Form.css">
+<title>Challenge 1 css (form)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <legend id="Legend-Style">Formulario</legend>
+
+    <form id="Form-Style" action="" method="post" enctype="multipart/form-data">
+
+        <label class="Label-Style"> Name:
+
+            <input class="Input-Style" type="text" name="Pasrameter-Name" autofocus maxlength="100" autocomplete="name"
+                placeholder="Ex:Diogo.." required>
+
+        </label>
+
+        <label class="Label-Style">Email:
+
+            <input class="Input-Style" type="email" name="Parameter-Email" maxlength="40" autocomplete="email "
+                placeholder="Ex:Diogo@gmail.com" required>
+
+        </label>
+
+        <label class="Label-Style">Idade:
+
+            <input class="Input-Style" type="number" name="Parameter-Age" max="120" min="12" placeholder="Ex:15"
+                required>
+
+        </label>
+
+        <label class="Label-Style">Data de nascimento:
+
+            <input class="Input-Style" type="date" name="Parameter-Date-Of-Birth" required>
+
+        </label>
+
+        <label class="Label-Style">Onde você possui conta?
+
+            <div id="Input-Checkbox">
+                <input type="checkbox" name="Parameter-checkbox"> Instagram
+                <input type="checkbox" name="Parameter-checkbox"> Facebook
+                <input type="checkbox" name="Parameter-checkbox"> Youtube
+            </div>
+
+        </label>
+
+        <label class="Label-Style">Sexo:
+
+            <div id="Input-Checkbox">
+                <input  type="radio" name="Parameter-sex"> Homem
+                <input  type="radio" name="Parameter-sex"> Mulher
+            </div>
+
+        </label>
+
+        <label class="Label-Style">Cor dos olhos:
+
+            <input class="Input-Style" type="color" name="Parameter-Color-Eyes">
+
+        </label>
+
+        <label class="Label-Style">Biografia:
+
+            <textarea class="Input-Style" name="Box-Biography" rows="10" cols="30"> </textarea>
+
+        </label>
+
+        <label class="Label-Style">Foto de perfil:
+
+            <input class="Input-Style" type="file" accept="image/*" name="Parameter-File" required>
+
+        </label>
+
+        <label class="Label-Style">Telefone:
+
+            <input class="Input-Style" type="tel" maxlength="15" name="Parameter-Tel" placeholder="Ex:11988947894">
+
+        </label>
+
+        <label class="Label-Style">Link do perfil do facebook:
+
+            <input class="Input-Style" type="url" name="Parameter-Url-Fecebook" autocomplete="Parameter-Url"
+                placeholder="Ex:www.facebook.com/feio/">
+
+        </label>
+
+        <label class="Label-Style">Senha:
+
+            <input class="Input-Style" type="password" name="Parameter-Password" maxlength="8" minlength="6" required>
+
+        </label>
+
+        <button id="Button-Reset" type="reset"> Limpar</button>
+        <button id="Button-Submit" type="submit"> Enviar dados</button>
+
+    </form>
+
+</body>
+
+</html>
